@@ -1,4 +1,9 @@
-let list = document.querySelectorAll('li')[1]
-list.previousElementSibling.innerHTML = 'working'
+let actor = document.querySelector('#actor')
 
-list.parentElement.classList.add('order1')
+function remove(){
+    actor.classList.remove('active')
+    actor.classList.remove('active2')
+}
+function add(){
+    actor.classList.add('active2')
+}
