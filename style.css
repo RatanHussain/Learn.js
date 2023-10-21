@@ -4,13 +4,12 @@
     transition: all .3s;
 
 }
-i{
+p{
     position: absolute;
     font-size: 3rem;
     color: red;
     font-weight: bolder;
-    margin-top: 200px;
-    margin-left: -200px;
+
 
 }
 
