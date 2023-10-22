@@ -1,6 +1,5 @@
- let count = 0;
-document.querySelector('textarea').addEventListener('keypress',function(event){
-    count++
-    let key = event.key;
-    document.querySelector('p').innerHTML = 'Your message lentg is  ' + key;
-})
+function getSelectedOptions() {
+    const selectElement = document.getElementById("multipleSelect");
+    const selectedOptions = Array.from(selectElement.selectedOptions).map(option => option.value);
+    alert("Selected options: " + selectedOptions.join(", "));
+  }
