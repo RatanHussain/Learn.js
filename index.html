@@ -9,17 +9,30 @@
 </head>
 <body>
 
-<label for="dep">Department </label>
-
-<select id="multipleSelect" multiple="multiple">
-    <option value="option1">Option 1</option>
-    <option value="option2">Option 2</option>
-    <option value="option3">Option 3</option>
-  </select>
-
-  <button onclick="getSelectedOptions()">Get Selected Options</button>
 
 
+  <form action="#">
+
+    <div>
+      <label for="name">
+        Name :
+        <input type="text" name="name" id="name" autofocus required>
+      </label>
+    </div>
+    <div>
+      <label for="email">
+        Email :
+        <input type="email" name="email" id="email" required>
+      </label>
+    </div>
+    <div>
+      <label for="password">
+        Password :
+        <input type="password" name="password" id="password" required minlength="6" maxlength="15">
+      </label>
+    </div>
+    <input type="submit" value="Sign Up">
+  </form>
 
 
 
