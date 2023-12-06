@@ -25,14 +25,19 @@
 			<style>
 				.underline{transition: all .3s;}
 				.underline:hover{text-decoration: underline;}
+				.carousel-item{
+					padding: 5%;
+					text-align: center;
+				}
 			</style>
 	</head>
 	<body>
+
 		<div class="container">
 
 			<!-- header -->
 			<header class="sticky-md-top">
-				<nav style="background-color: #0e8585;" class="rounded navbar navbar-expand-lg navbar-dark p-3">
+				<nav style="background-color: #9c4f2d;" class="rounded navbar navbar-expand-lg navbar-dark p-3">
 					<a href="#">
 						<img src="Ratan.jpg" class="rounded-circle navbar-brand" style="height: 60px;" alt="">
 					</a>
@@ -48,6 +53,137 @@
 					</div>
 				</nav>
 			</header>
+
+			<!-- Carousel here -->
+			<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+				<div class="carousel-indicators">
+				  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+				  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+				  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+				  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+				</div>
+				<div class="carousel-inner justify-content-center mx-auto">
+				  <div class="carousel-item active">
+					<div class="row">
+						<div class="col-12 col-md-5">
+							<img
+								class="img-thumbnail mt-5 rounded-circle img-fluid"
+								src="Ratan.jpg"
+								alt="" />
+						</div>
+						<div class="col-md-7">
+							<p class="fs-5 pt-5">
+								<b>MD RATAN MIA</b> <br />
+								Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+								Quibusdam asperiores commodi qui animi voluptatem dolore laborum
+								deleniti, necessitatibus pariatur quis autem minima at quaerat
+								hic,
+							</p>
+
+							<a href="#show" data-bs-toggle="collapse">Learn more</a>
+							<div id="show" class="collapse">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis earum eius quidem qui saepe expedita suscipit tempore obcaecati doloribus non. natus non repellat ex cumque accusamus quo ea quam
+								cupiditate dolor? Atque dolorum, repellat velit accusamus eaque,
+								deserunt vero exercitationem nesciunt illo magni incidunt,
+							</div>
+							<div class="btn d-block">
+								<button class="d-block btn-lg btn btn-outline-primary mb-3">
+									CV Download
+								</button>
+								<button class="d-block btn-lg btn btn-outline-primary mb-3">
+									Learn more about me
+								</button>
+							</div>
+							<div class="alert alert-dismissible alert-primary" role="alert">
+								<button
+									data-bs-dismiss="alert"
+									class="btn-close"
+									aria-label="class"></button>
+								Lorem ipsum dolor sit amet consectetur adipisicing.
+								<a class="link" href="#">Visit</a>
+							</div>
+							<div class="alert alert-dismissible alert-danger" role="alert">
+								<button
+									data-bs-dismiss="alert"
+									class="btn-close"
+									aria-label="class"></button>
+								Lorem ipsum dolor sit amet consectetur adipisicing.
+								<a class="link" href="#">Visit</a>
+							</div>
+						</div>
+					</div>
+
+
+
+				  </div>
+				  <div class="carousel-item ">
+					<div class="d-block mx-auto card col-5 col-md-4 col-lg-3 m-2">
+						<div class="card-header-top">
+							<img class="m-auto justify-content-center d-flex pt-2 img-fluid" src="todo.png" style="width: 212px;" alt="">
+						</div>
+						<div class="card-body">
+							<h4>Todo App</h4>
+							<p class="text-muted">This is a complete todo app, it will help remaining all sticky data and small note, you can use as a Notepad also.</p>
+							<a class="stretched-link" target="_blank" href="https://ratanhussain.github.io/Todo-App/">Check it out</a>
+						</div>
+					</div>
+				  </div>
+				  <div class="carousel-item ">
+				<!-- Card starts -->
+				<div class="d-block mx-auto card col-5 col-md-4 col-lg-3 m-2">
+					<div class="card-header-top">
+						<img class="p-2 m-auto justify-content-center d-flex img-fluid" src="game.png" style="height: 190px;" alt="">
+					</div>
+					<div class="card-body">
+						<h4>Guessing Game</h4>
+						<p class="text-muted">You can guess a number between 1-5, when your entered number match with random number than i will win a round.</p>
+						<a class="stretched-link" target="_blank" href="https://ratanhussain.github.io/Guessing-Game/">Check it out</a>
+					</div>
+				</div>
+				<!-- Card Ends -->
+				  </div>
+				  <div class="carousel-item ">
+					<!-- Card starts -->
+					<div class="d-block mx-auto card col-5 col-md-4 col-lg-3 m-2">
+						<div class="card-header-top">
+							<img class="p-2 m-auto justify-content-center d-flex img-fluid" src="colorFullLoginPage.png" style="height: 190px;" alt="">
+						</div>
+						<div class="card-body">
+							<h4>Color animated login page</h4>
+							<p class="text-muted">A beautyfull color animated login page, modern and stylish, its can use any web site.</p>
+							<a class="stretched-link" target="_blank" href="https://ratanhussain.github.io/Colorfull-loginPage/">Check it out</a>
+						</div>
+					</div>
+					<!-- Card Ends -->
+					  </div>
+				  <div class="carousel-item ">
+					<!-- Card starts -->
+					<div class="d-block mx-auto card col-5 col-md-4 col-lg-3 m-2">
+						<div class="card-header-top">
+							<img class="p-2 m-auto justify-content-center d-flex img-fluid" src="animatedLoginPage.png" style="height: 190px;" alt="">
+						</div>
+						<div class="card-body">
+							<h4>Login page with beautifull animation</h4>
+							<p class="text-muted">This is a login page with beautifull animation. It's can use any modern web, </p>
+							<a class="stretched-link" target="_blank" href="https://ratanhussain.github.io/Beautiful-animation-loginPage/#">Check it out</a>
+						</div>
+					</div>
+					<!-- Card Ends -->
+					  </div>
+				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+				  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				  <span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+				  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+				  <span class="visually-hidden">Next</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+				  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+				  <span class="visually-hidden">Next</span>
+				</button>
+			  </div>
 
 			<!-- All content here -->
 			<main>
@@ -126,9 +262,9 @@
 							</div>
 							<div class="btn d-block">
 								<button class="d-block btn-lg btn btn-outline-primary mb-3">
-									CV Download
+									CV Download <span class="badge bg-info rounded-pill">new</span>
 								</button>
-								<button class="d-block btn-lg btn btn-outline-primary mb-3">
+								<button class="d-block btn-lg btn btn-outline-primary mb-3" data-bs-toggle="tooltip" title="Click here to about more">
 									Learn more about me
 								</button>
 							</div>
@@ -194,6 +330,7 @@
 						<li class="nav-item"><a data-bs-toggle="tab" class="nav-link" href="#edu">Educaion</a></li>
 						<li class="nav-item"><a data-bs-toggle="tab" class="nav-link" href="#hobby">Hobby</a></li>
 					</ul>
+
 					<div class="tab-content">
 						<div id="skill" class="tab-pane active"><p>1. Lorem ipsum dolor sit  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe architecto maxime quam voluptas sequi accusantium natus ipsam qui laborum debitis dolorem dolores deserunt odit quas, similique Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae eius aspernatur sunt ipsum eum ad voluptatum. Optio atque minima alias! Pariatur velit sapiente alias fuga tenetur cum consequuntur placeat. Cum? repellendus ea. At, necessitatibus? amet consectetur adipisicing elit.</p></div>
 						<div id="edu" class="tab-pane fade"><p>2. Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe architecto maxime quam voluptas sequi accusantium natus ipsam qui laborum debitis dolorem dolores deserunt odit quas, similique Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae eius aspernatur sunt ipsum eum ad voluptatum. Optio atque minima alias! Pariatur velit sapiente alias fuga tenetur cum consequuntur placeat. Cum? repellendus ea. At, necessitatibus?  consectetur adipisicing elit.</p></div>
@@ -359,7 +496,10 @@
 					  </div>
 					</div>
 				</div>
-
+				<!-- Progress data here -->
+				<div class="progress mt-5">
+					<div class="progress-bar w-25"></div>
+				</div>
 				<!-- Employee list here -->
 				<div class="employe">
 					<div class="title py-4 text-center">
@@ -383,6 +523,7 @@
 				</ul>
 			</footer>
 		</div>
+
 
 		<!-- Bootstrap 5 cdn-->
 		<script
