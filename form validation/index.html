@@ -1,42 +1,31 @@
 <!-- @format -->
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<script src="https://kit.fontawesome.com/f0be14b3ea.js" crossorigin="anonymous"></script>
+		<script
+			src="https://kit.fontawesome.com/f0be14b3ea.js"
+			crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="style.css" />
 		<title>Ragistation Form</title>
 	</head>
 	<body>
 		<div class="container">
-			<form id="form" action="#">
-				<h2>Ragistation Form</h2>
-				<div class="inp-section">
-					<label for="name">Name:</label>
-					<input type="text" id="name" />
-					<small></small>
-				</div>
-				<div class="inp-section">
-					<label for="email">Email:</label>
-					<input type="email" id="email" required />
-					<small></small>
-				</div>
-				<div class="inp-section">
-					<label for="password`">Password:</label>
-					<input type="password" id="password" required/>
-					<small></small>
-				</div>
-				<div class="inp-section">
-					<label for="password">Re-type Password:</label>
-					<input type="password" id="secondPassword" required />
-					<small></small>
-				</div>
-				<div class="inp-section">
-					<input type="submit"  />
-				</div>
-			</form>
+			<h1 style="text-align: center">Checkox learning</h1>
+			<div id="listGroup">
+				<label for="red">Red</label>
+				<input type="checkbox" id="red" name="color" value="red"><br>
+				<label for="green">green</label>
+				<input type="checkbox" id="green" name="color" value="green"><br>
+				<label for="Blue">Blue</label>
+				<input type="checkbox" id="blue" name="color" value="blue"><br>
+				<label for="pink">pink</label>
+				<input type="checkbox" id="pink" name="color" value="pink"><br>
+
+				<button id="btn">Show</button>
+			</div>
 		</div>
 
 		<script src="./index.js"></script>
