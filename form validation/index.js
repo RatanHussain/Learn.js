@@ -5,31 +5,20 @@ let sms = document.querySelector('#sms');
 let sl = document.querySelector('#ul');
 let btn = document.querySelector('#btn');
 
-form.addEventListener('submit', () => {
+form.addEventListener('submit', (e) => {
+	e.preventDefault();
 	if (sms.value == '') {
 		alert('Enter a value first!');
 	} else {
-		let op = document.createElement('option');
-		op.innerHTML = sms.value;
-		op.id = 'del';
-		op.value = sms.value;
-
-		sl.appendChild(op);
-		sms.value = '';
+		
 	}
 });
 
 btn.onclick = () => {
-	let delarry = [];
+	var selectElement = document.getElementById('ul');
+	var selectedOptionse = Array.from(selectElement.selectedOptions);
 
-	for (let i = 0; i < sl.options.length; i++) {
-		delarry[i] = sl.options[i].selected;
-	}
-
-	let index = sl.options.length;
-	while (index--) {
-		if (delarry[index]) {
-			sl.remove(index)
-		}
-	}
+	selectedOptionse.forEach(function (option) {
+		selectElement.removeChild(option);
+	});
 };
