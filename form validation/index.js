@@ -1,24 +1,31 @@
 /** @format */
 
-let form = document.querySelector('form');
+let form = document.querySelector('#fok');
 let sms = document.querySelector('#sms');
 let sl = document.querySelector('#ul');
 let btn = document.querySelector('#btn');
 
-form.addEventListener('submit', (e) => {
+
+form.addEventListener('input', (e) => {
 	e.preventDefault();
-	if (sms.value == '') {
-		alert('Enter a value first!');
-	} else {
-		
+
+	if (sms.value === '') {
+		alert('Must enter a value!')
 	}
-});
 
-btn.onclick = () => {
-	var selectElement = document.getElementById('ul');
-	var selectedOptionse = Array.from(selectElement.selectedOptions);
+	let option = new Option(sms.value)
 
-	selectedOptionse.forEach(function (option) {
-		selectElement.removeChild(option);
-	});
-};
+	sl.add(option)
+})
+
+
+btn.addEventListener('click', () => {
+	let optag = document.querySelector('#ul')
+
+	let selectedOptions = Array.from(optag.selectedOptions)
+
+	selectedOptions.forEach(function (op) {
+		optag.removeChild(op)
+
+	})
+})
