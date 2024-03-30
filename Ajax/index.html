@@ -9,10 +9,49 @@
 <body class="bg-black text-white">
 
     <div class="container">
-        <button type="button" id="btn" class="btn btn-primary mt-5">Load all posts</button>
-        <br>
 
-        <ul class="list-group" id="lists"></ul>
+        <!-- Todo Ajax post method is here -->
+        <div class="ajax-post my-5">
+            <form id="form" action="#">
+                <h1 class="text-center">Ajax Post method</h1>
+
+                <div class="form-group my-3">
+                    <label for="UserId">Enter UserId here</label>
+                    <input class="form-control" type="number" name="userId" id="UserId">
+                    <div class="invalid-feedback">You must provide the UserId</div>
+                </div>
+                <div class="form-group my-3">
+                    <label for="title">Enter Title here</label>
+                    <input class="form-control" type="text" name="title" id="title">
+                    <div class="invalid-feedback">You must provide the title</div>
+                </div>
+                <div class="form-group my-3">
+                    <label for="body">Enter Message here</label>
+                    <textarea class="form-control" name="body" id="body" cols="30" rows="10"></textarea>
+                    <div class="invalid-feedback">You must provide a Message</div>
+                </div>
+                <input type="submit" value="Submit" class="btn btn-info">
+            </form>
+
+            <ul id="showPosts" class="my-3">
+
+            </ul>
+
+        </div>
+
+
+
+
+
+
+        <!-- todo Ajax get method is here -->
+        <div class="ajax-get">
+            <h1 class="text-center">Ajax get method</h1>
+            <button type="button" id="btn" class="btn btn-primary mt-5">Load all posts</button>
+            <br>
+
+            <ul class="list-group" id="lists"></ul>
+        </div>
     </div>
 
 
