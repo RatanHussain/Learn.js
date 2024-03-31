@@ -31,8 +31,8 @@ form.addEventListener('submit', function (e) {
 		})
 			.then((res) => res.json())
 			.then((data) => {
-				let lists = createList(data)
-				showPosts.appendChild(lists)
+				let lists = createList(data);
+				showPosts.appendChild(lists);
 			})
 			.catch((er) => console.log(er));
 

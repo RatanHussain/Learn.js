@@ -1,0 +1,35 @@
+.heighted{
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.img{
+    scale: 1.5;
+    margin-bottom: 30px;
+}
+.into{
+    text-transform: capitalize;
+    font-weight: bold;
+
+}
+
+.left{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    bottom: 0;
+    background-color:rgb(207, 255, 218);
+}
+.right{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    bottom: 0;
+    background-color:rgb(127, 255, 155);
+
+}
